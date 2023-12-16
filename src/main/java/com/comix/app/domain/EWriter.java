@@ -13,20 +13,17 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "TB_USER")
-public class EUser {
+@Table(name = "TB_WRITER")
+public class EWriter {
 
     @Id
-    @SequenceGenerator(name = "USER_SEQ", sequenceName = "USER_SEQ", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "USER_SEQ")
+    @SequenceGenerator(name = "WRITER_SEQ", sequenceName = "WRITER_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "WRITER_SEQ")
     @Column(name = "ID")
     private Long id;
 
     @Column(name = "FULL_NAME")
     private String name;
-
-    @Column(name = "NICKNAME")
-    private String nickname;
 
     @Column(name = "BIRTHDATE")
     private LocalDate birthdate;

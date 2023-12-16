@@ -23,9 +23,9 @@ public class UserResource {
 
 
     @GetMapping
-    public Page<DUser> findById(@RequestParam(value = "name", required = false) String name,
-                                @RequestParam(value = "nickname", required = false) String nickname,
-                                @PageableDefault(size = 10, sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable) {
+    public Page<DUser> list(@RequestParam(value = "name", required = false) String name,
+                            @RequestParam(value = "nickname", required = false) String nickname,
+                            @PageableDefault(size = 10, sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable) {
         return service.list(name, nickname, pageable);
     }
 

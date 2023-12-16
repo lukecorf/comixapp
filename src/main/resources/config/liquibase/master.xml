@@ -6,5 +6,11 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <include file="config/liquibase/changelog/user.xml"/>
+    <include file="config/liquibase/changelog/V001_USER.sql"/>
+    <include file="config/liquibase/changelog/V002_PUBLISHING_COMPANY.sql"/>
+    <include file="config/liquibase/changelog/V003_WRITER.sql"/>
+    <include file="config/liquibase/changelog/V004_GNERE.sql"/>
+    <include file="config/liquibase/changelog/V005_COMIC.sql"/>
+    <include file="config/liquibase/changelog/V006_COMIC_GNERE.sql"/>
+    <include file="config/liquibase/changelog/V007_COMIC_WRITER.sql"/>
 </databaseChangeLog>

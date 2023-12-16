@@ -1,0 +1,8 @@
+create table TB_WRITER (
+    ID BIGINT NOT NULL,
+    FULL_NAME VARCHAR(255) NOT NULL,
+    BIRTHDATE TIMESTAMP NOT NULL,
+    CONSTRAINT WRITER_PK PRIMARY KEY (ID)
+);
+
+create sequence WRITER_SEQ increment 1 start 1;
